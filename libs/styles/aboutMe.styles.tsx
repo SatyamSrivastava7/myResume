@@ -21,7 +21,7 @@ export const MainContainer = styled.div`
     height: fit-content;
     margin-top: 8rem;
     padding: 1rem;
-    margin-right: 13rem;
+
     border: 5px solid #ffe633;
     border-radius: 8px;
     display: flex;
