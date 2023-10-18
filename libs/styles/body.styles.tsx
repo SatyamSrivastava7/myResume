@@ -10,15 +10,14 @@ export const MainContainer = styled.div`
   .details {
     padding: 2rem;
     gap: 1rem;
-    height: 100%;
-    margin-top: 0;
-    margin-left: 2.5rem;
+    height: fit-content;
+    margin: 2rem auto 2rem 2.5rem;
     background: #21211e;
     display: grid;
     z-index: 999999;
   }
   .detailsHeader {
-    margin: auto;
+    margin: 0;
     width: 100%;
     padding: 10px;
   }
@@ -45,8 +44,8 @@ export const MainContainer = styled.div`
   }
   .aboutMe {
     background: #181815;
-    height: 100%;
-    margin: 0 2.5rem;
+    height: 40rem;
+    margin: 2rem 2.5rem;
   }
   img {
     border-radius: 50%;
@@ -55,7 +54,7 @@ export const MainContainer = styled.div`
     display: flex;
     gap: 0.5rem;
     flex-direction: column;
-    padding: 0.5rem 0;
+    padding: 1rem 0;
     border-top: 1px solid #ffff;
     border-bottom: 1px solid #ffff;
   }

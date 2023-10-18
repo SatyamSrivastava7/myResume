@@ -17,7 +17,7 @@ const AboutMe = () => {
           About Me
         </Typography>
       </div>
-      <div>
+      <div style={{marginRight: "12rem"}}>
         <div className="bodyWrapper">
           <Typography variant="h5" className="aboutHeader">
             Hello,
