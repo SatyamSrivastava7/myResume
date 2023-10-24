@@ -3,7 +3,7 @@ import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import MailIcon from "@mui/icons-material/Mail";
 import { CopyToClipboard } from "react-copy-to-clipboard";
-import { MainContainer } from "../styles/socialMedia.styles";
+import { MainContainer } from "../../styles/socialMedia.styles";
 import Snackbar from "@mui/material/Snackbar";
 import { useState } from "react";
 

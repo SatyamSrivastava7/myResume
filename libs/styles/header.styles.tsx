@@ -5,9 +5,11 @@ export const MainContainer = styled.div`
   display: grid;
   grid-template-columns: 2fr 1fr;
   height: fit-content;
-  background: black;
+  background: #21211e;
   padding: 1rem;
-  
+  border-bottom: 1px solid #21211e;
+  z-index: 99999;
+
   .menu-list {
     display: grid;
     gap: 1rem;
@@ -18,6 +20,12 @@ export const MainContainer = styled.div`
 
   .menu-options {
     color: #ffff;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+  .selected-menu {
+    color: #ffe633;
     &:hover {
       cursor: pointer;
     }

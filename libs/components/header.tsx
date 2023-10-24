@@ -1,18 +1,54 @@
 import Image from "next/image";
 import { MainContainer } from "../styles/header.styles";
 
-const Header = () => {
+const Header = ({
+  setSelectedHeader,
+  selectedHeader,
+}: {
+  setSelectedHeader: any;
+  selectedHeader: string;
+}) => {
+  const onClickHeader = (item: string) => {
+    setSelectedHeader(item);
+  };
   return (
     <MainContainer>
       <div className="headerIcon">
         <Image src={"/headerIcon.svg"} alt="image" height={40} width={40} />
       </div>
       <div className="menu-list">
-        {/* <div className="menu-options">Home</div> */}
-        <div className="menu-options">About</div>
-        <div className="menu-options">Services</div>
-        <div className="menu-options">Portfolio</div>
-        <div className="menu-options">Contact</div>
+        <div
+          className={
+            selectedHeader !== "home" ? "menu-options" : "selected-menu"
+          }
+          onClick={() => onClickHeader("home")}
+        >
+          Home
+        </div>
+        <div
+          className={
+            selectedHeader !== "about" ? "menu-options" : "selected-menu"
+          }
+          onClick={() => onClickHeader("about")}
+        >
+          About
+        </div>
+        <div
+          className={
+            selectedHeader !== "skills" ? "menu-options" : "selected-menu"
+          }
+          onClick={() => onClickHeader("skills")}
+        >
+          Skills
+        </div>
+        <div
+          className={
+            selectedHeader !== "contact" ? "menu-options" : "selected-menu"
+          }
+          onClick={() => onClickHeader("contact")}
+        >
+          Achievements
+        </div>
       </div>
     </MainContainer>
   );

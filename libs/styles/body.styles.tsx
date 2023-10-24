@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const MainContainer = styled.div`
   display: grid;
   align-items: center;
-  background: black;
+  background: linear-gradient(to right, #343e3e, black, #343e3e);
   height: 100%;
   grid-template-columns: auto 1fr;
   justify-conent: space-around;
@@ -12,7 +12,7 @@ export const MainContainer = styled.div`
     gap: 1rem;
     height: fit-content;
     margin: 2rem auto 2rem 2.5rem;
-    background: #21211e;
+    background: linear-gradient(to right, #21211e, #1a1d16, #343e3e);
     display: grid;
     z-index: 999999;
   }
@@ -43,9 +43,11 @@ export const MainContainer = styled.div`
     color: #ffe633;
   }
   .aboutMe {
-    background: #181815;
+    background: linear-gradient(to right, #21211e, #1a1d16, #343e3e);
     height: 40rem;
-    margin: 2rem 2.5rem;
+    margin: 2rem 2.5rem 2rem 2rem;
+    z-index: 99999;
+    border: 2px solid linear-gradient(to right, #21211e, #1a1d16, #343e3e);
   }
   img {
     border-radius: 50%;

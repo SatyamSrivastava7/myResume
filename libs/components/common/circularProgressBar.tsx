@@ -1,4 +1,4 @@
-import { MainContainer } from "../styles/progressBar.styles";
+import { MainContainer } from "../../styles/common/circularProgressBar.styles";
 
 const ProgressBar = () => {
   return (

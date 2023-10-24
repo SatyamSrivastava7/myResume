@@ -1,5 +1,9 @@
 import { Typography } from "@mui/material";
-import { MainContainer } from "../styles/aboutMe.styles";
+import { MainContainer } from "../../styles/DynamicSection/aboutMe.styles";
+import RedeemIcon from "@mui/icons-material/Redeem";
+import LocalLibraryIcon from "@mui/icons-material/LocalLibrary";
+import SchoolIcon from "@mui/icons-material/School";
+import SportsEsportsIcon from "@mui/icons-material/SportsEsports";
 
 const AboutMe = () => {
   const dateOfJoining = new Date("09/15/2021");
@@ -17,7 +21,7 @@ const AboutMe = () => {
           About Me
         </Typography>
       </div>
-      <div style={{marginRight: "12rem"}}>
+      <div style={{ marginRight: "12rem" }}>
         <div className="bodyWrapper">
           <Typography variant="h5" className="aboutHeader">
             Hello,
@@ -28,6 +32,42 @@ const AboutMe = () => {
             experience as a professional Web developer, I have acquired the
             skills and knowledge necessary to make your project a success.
           </Typography>
+          <div className="expChild">
+            <RedeemIcon className="iconColor" />
+            <Typography variant="body1" className="aboutBodyText">
+              Birthday:{" "}
+            </Typography>
+            <Typography variant="body1" className="aboutBodyText">
+              16.10.2000
+            </Typography>
+          </div>
+          <div className="expChild">
+            <LocalLibraryIcon className="iconColor" />
+            <Typography variant="body1" className="aboutBodyText">
+              Study:{" "}
+            </Typography>
+            <Typography variant="body1" className="aboutBodyText">
+              National Institute of Technology, Jamshedpur
+            </Typography>
+          </div>
+          <div className="expChild">
+            <SchoolIcon className="iconColor" />
+            <Typography variant="body1" className="aboutBodyText">
+              Degree:{" "}
+            </Typography>
+            <Typography variant="body1" className="aboutBodyText">
+              B.Tech (Hons.)
+            </Typography>
+          </div>
+          <div className="expChild">
+            <SportsEsportsIcon className="iconColor" />
+            <Typography variant="body1" className="aboutBodyText">
+              Interests:{" "}
+            </Typography>
+            <Typography variant="body1" className="aboutBodyText">
+              Chess, Badminton, Reading
+            </Typography>
+          </div>
         </div>
         <div className="expDetails">
           <div className="expChild">

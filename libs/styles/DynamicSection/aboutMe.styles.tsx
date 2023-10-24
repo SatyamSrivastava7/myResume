@@ -8,6 +8,9 @@ export const MainContainer = styled.div`
     color: #ffe633;
     font-weight: bold;
   }
+  .iconColor {
+    color: #ffe633;
+  }
   .aboutMeText {
     margin-top: 0.5rem;
     font-weight: 800;

@@ -1,15 +1,19 @@
 import { MainContainer } from "../styles/body.styles";
 import { Typography } from "@mui/material";
-import AboutMe from "./aboutMe";
-import ProgressBar from "./progressBar";
-import SocialMedia from "./socialMedia";
+import AboutMe from "./DynamicSection/aboutMe";
+import ProgressBar from "./common/circularProgressBar";
+import SocialMedia from "./common/socialMedia";
+import SkillSection from "./DynamicSection/skills";
+import Home from "./DynamicSection/home";
+import Contact from "./DynamicSection/achievements";
 
-const Body = () => {
+const Body = ({ selectedHeader }: { selectedHeader: string }) => {
   const dateOfJoining = new Date("10/16/2000");
   const monthOfExp = Date.now() - dateOfJoining.getTime(); //month difference
   const expInDateFormat = new Date(monthOfExp); //difference in date format
   const yearOfExp = expInDateFormat.getUTCFullYear(); //extract year from date
   const age = Math.abs(yearOfExp - 1970);
+
   return (
     <MainContainer>
       <div>
@@ -50,7 +54,10 @@ const Body = () => {
       </div>
 
       <div className="aboutMe">
-        <AboutMe />
+        {selectedHeader === "about" && <AboutMe />}
+        {selectedHeader === "skills" && <SkillSection />}
+        {selectedHeader === "home" && <Home />}
+        {selectedHeader === "contact" && <Contact />}
       </div>
     </MainContainer>
   );
